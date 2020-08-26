@@ -5,8 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Day02_IfElse {
     public static void main(String[] args) {
-        System.setProperty("webdriwer.chrome.driver", "C:\\Users\\Muaz\\Documents\\selenium dependencies\\drivers\\chromedriver.exe");
-
+        System.setProperty("webdriver.chrome.driver","C:/Users/Muaz/Documents/selenium dependencies/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://www.amazon.com/");
@@ -19,6 +18,6 @@ public class Day02_IfElse {
         } else {
             System.out.println("Computers kelimesi yok");
         }
-
+        driver.quit();
     }
     }
